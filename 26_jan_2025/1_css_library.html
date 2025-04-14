@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Code Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            border: 2px solid;
+            background-color: #192638;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 80px;
+        }
+        nav div ul{
+            list-style: none;
+            display: flex;
+            /* justify-content: space-around; */
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px;
+        }
+        nav div button{
+            padding: 5px 10px;
+            border-radius: 5px;
+            border:none;
+            cursor: pointer;
+        }
+        nav div button:hover{
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .hero{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            background-color: #192638;
+            color: #ffffff;
+            padding: 40px 80px;
+        }
+         .hero-box1{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            gap: 20px;
+            padding: 20px 40px;
+         }
+         .hero-box1 button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            width: 25%;
+         }
+         .hero-box1 h1{
+            font-size: 3em;
+         }
+         .hero-box1 p{
+            font-size: 1.2em;
+            color:#aaa3a3;
+         }
+         .hero-box1 button:hover{
+            background-color: #ff0000;
+            color: #ffffff;
+            font-size: 1.2em;
+         }
+         .hero .hero-box2 img{
+            width: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 10px 2px #ffffff;
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg) ;
+            transition: all 0.5s ease-in-out;
+         }
+         .hero .hero-box2 img:hover{
+            cursor: pointer;
+            transform: rotate(10deg);
+            -webkit-transform: rotate(10deg) ;
+            transition: all 1s ease-in-out;
+         }
+         .logo-text{
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
+            color: #192638;
+         }
+         .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border: 2px solid #192638;
+            border-radius: 10px;
+            margin: 20px 80px;
+            padding: 20px 20px;
+         }
+         .logo div img{
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 0 10px 1px #000000;
+         }
+        .three-card .card img{
+            width: 150px;
+            /* height: 100px; */
+            /* border-radius: 50%; */
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .three-card{
+            border: 2px solid #192638;
+            display: flex;
+            margin: 20px 10%;
+            justify-content: space-evenly;
+            padding: 40px 80px;
+            box-shadow: 0 0 10px 2px #192638;
+        }
+        .card{
+            border-radius: 10px;
+            box-shadow: 0 0 10px 1px #0f1a29;
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+        }
+        .three-card .card h3{
+            margin: 20px 0;
+            font-size: 1.5rem;
+        }
+        .three-card .card p{
+            text-align: justify;
+            margin: 20px 0;
+        }
+
+        /* media query */
+        @media screen and (max-width: 976px){ 
+            /* when width size maximum 976px ru jodi kami jauchi then the below style will work  */
+            .three-card{
+            flex-direction: column;
+            justify-content: center;
+        }
+             }
+
+
+        /* 💥NOTE: Hitesh sir said media query he will learn to us after after js will start tailwind css 
+        in tailwind css he will learn media query */
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="div1">
+            <p>Logo</p>
+        </div>
+        <div class="div2">
+            <ul>
+                <li>Home</li>
+                <li>AboutUS</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="div3">
+            <button>Signup</button>
+            <button>Login</button>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-box1"> 
+            <h1>Hero Title</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis recusandae id magni maxime nulla itaque facilis nisi provident labore obcaecati?</p>
+            <button>Signup</button>
+        </div>
+        <div class="hero-box2">
+            <img src="https://images.pexels.com/photos/18681382/pexels-photo-18681382/free-photo-of-coding.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="hitesh sir">
+        </div>
+    </section>
+
+    <h2 class="logo-text">Our Clients</h2>
+    <section class="logo">
+        <div><img src="https://images.pexels.com/photos/1337380/pexels-photo-1337380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="logo"></div>
+        <div><img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="logo"></div>
+        <div><img src="https://images.pexels.com/photos/1337380/pexels-photo-1337380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="logo"></div>
+        <div><img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="logo"></div>
+        <div><img src="https://images.pexels.com/photos/1337380/pexels-photo-1337380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="logo"></div>
+    </section>
+
+    <section class="three-card">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/2287252/pexels-photo-2287252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="john">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores at distinctio doloremque sed atque alias laborum voluptate, repellat modi necessitatibus?</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cena">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores at distinctio doloremque sed atque alias laborum voluptate, repellat modi necessitatibus?</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" alt="romen">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores at distinctio doloremque sed atque alias laborum voluptate, repellat modi necessitatibus?</p>
+        </div>
+    </section>
+</body>
+</html>
