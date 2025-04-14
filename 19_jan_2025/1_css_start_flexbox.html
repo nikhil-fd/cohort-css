@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        h2{
+            color: red;
+        }
+        /* h2 - selector, color - property, red - value */
+        #parent{
+            border: 2px solid;
+            height: 300px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            /* flex-wrap: wrap; */
+            /* gap: 150px; */
+        }
+        .items{
+            border: 2px solid blue;
+            padding: 10px;
+            height: 20px;
+            flex: 1;
+        }
+        #item2{
+            flex: 2;
+            /* item 2 element size is increased as compare to others element */
+            order: 4;
+            /* order: 4 >> item2 element shifted to item4 position     */
+        }
+        #item4{
+            flex: 2;
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS: Cascading Style Sheet. Cascading means 1 behind another applying style, cascading means overlapping style. -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae obcaecati similique atque in? Optio sequi dolorem consectetur quos quis.</p>
+    <h2>Welcome to CSS</h2>
+    <button>Submit</button>
+    <button style="background-color: aqua;">Register</button>
+    <button id="login">Login</button>
+    <!--👆 Here in button background color bydefault is coming with "color:gray" how come it is coming
+    actually every browser has user-agent-stylesheet this user-agent applying some default style
+    You can check user-agent-stylesheet>>just inspect>>then right side below user-agent-stylesheet -->
+    <br><br>
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <!--👇 Flexbox -->
+    <div id="parent">
+        <div id="item1" class="items">Item1</div>
+        <div id="item2" class="items">item2</div>
+        <div id="item3" class="items">item3</div>
+        <div id="item4" class="items">Item4</div>
+    </div>
+
+    <script>
+        //💥Flex: flex always work on children, not parent.
+        //<div class="parent"><div class="child"></div></div>
+    </script>
+</body>
+</html>

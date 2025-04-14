@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #parent{
+            border: 2px solid red;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            /*👆 when there is multiple line creating meanwhile this property changing the place of items
+              and these multiple line will create when items gets wrap.*/
+            /* align-items: center; */
+            /*👆 when there is single line and want to change their place */
+            row-gap: 20px;
+            column-gap: 20px;
+            /* gap: 20px; */
+            
+        }
+        .item1, .item2, .item3, .item4, .item5{
+            height: 62px;
+            width: 62px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        
+    </div>
+</body>
+</html>

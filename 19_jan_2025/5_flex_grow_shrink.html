@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-gap-shrink</title>
+    <style>
+        #parent{
+            height: 200px;
+            border: 2px solid red;
+            display: flex;
+        }
+        .item{
+            width: 150px;
+            height: 50px;
+            border: 2px solid blue;
+        }
+        #item3{
+            flex-grow: 2;
+            /* flex-grow: 2, means normal item size too 2guna item3 width size bodijibo. */
+        }
+        #item5{
+            flex-grow: 3;
+            /* flex-grow: 3 means normal item size too 3guna item5 width size bodijibo. */
+        }
+        #item2{
+            flex-shrink: 2;
+            /* here item2 width size 2guna kami jibo normal item size too */
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="item1" class="item">item1</div>
+        <div id="item2" class="item">item2</div>
+        <div id="item3" class="item">item3</div>
+        <div id="item4" class="item">item4</div>
+        <div id="item5" class="item">item5</div>
+    </div>
+</body>
+</html>
