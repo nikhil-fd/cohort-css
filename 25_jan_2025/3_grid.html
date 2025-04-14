@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        #parent{
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: 60px 60px 60px;
+            grid-template-columns: 50px 50px 50px;
+        }
+        .child{
+            border: 2px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+        <div class="child">Child3</div>
+        <div class="child">Child4</div>
+        <div class="child">Child5</div>
+    </div>
+</body>
+</html>
